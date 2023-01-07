@@ -31,4 +31,3 @@ CREATE TABLE [dbo].[your_table](
 ) ON [PRIMARY]
 GO
 ```
-- 
