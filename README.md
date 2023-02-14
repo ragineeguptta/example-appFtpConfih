@@ -31,3 +31,20 @@ CREATE TABLE [dbo].[your_table](
 ) ON [PRIMARY]
 GO
 ```
+
+
+* For check connection are established or not use this code-
+```
+try {
+            $driver = $fsMgr->createSftpDriver($config);;
+            if($driver->exists('/Inbox/')){
+              $response_message ='Connection done';
+            }
+            // else{
+            //     dd('c');
+            // }
+        }
+        catch (\Exception $e) {
+            $response_message ='Connection is not established to the required File Path!';
+        }
+```
